@@ -4,13 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <p id="p1">We are learning Javascript well well</p>
-    <div id="div">
-        <p></p>
-    </div>
     <button id="controvasia">Controvasy</button>
     <script src="script.js"></script>
+    <br>
+    <!-- calculator -->
+   <div class="calculator">
+    <input type="text" id="display" 'disabled' style="margin-bottom: 5px;">
+    <br>
+    <input type="button" value="+" onclick="display('+')">
+    <input type="button" value="-" onclick="display('-')">
+    <input type="button" value="*" onclick="display('*')">
+    <input type="button" value="/" onclick="display('/')" style="margin-bottom: 5px;">
+    <br>
+    <input type="button" value="1" onclick="display('1')">
+    <input type="button" value="2" onclick="display('2')">
+    <input type="button" value="3" onclick="display('3')">
+    <input type="button" value="4" onclick="display('4')" style="margin-bottom: 5px;">
+    <br>
+    <input type="button" value="5" onclick="display('5')">
+    <input type="button" value="6" onclick="display('6')">
+    <input type="button" value="7" onclick="display('7')">
+    <input type="button" value="8" onclick="display('8')" style="margin-bottom: 5px;">
+    <br>
+    <input type="button" value="9" onclick="display('9')">
+    <input type="button" value="." onclick="display('.')">
+    <input type="button" value="0" onclick="display('0')">
+    <button onclick="deleteButton()"><i class='bx bx-message-alt-x'></i></i></button>
+    <input type="button" value="=" onclick="calculate()">
+    <button id="clearButton" onclick="clearDisplay()">Clear</button>
+   </div>
 </body>
 </html>
